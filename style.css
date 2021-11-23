@@ -1,0 +1,164 @@
+:root{
+    font-family: 'Outfit', sans-serif;
+
+    /* Font weigth */
+    --light: 300;
+    --regular: 400;
+    --semibold: 500;
+
+    /* Color Palette */
+    /* Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --main-dark-blue: hsl(217, 54%, 11%);
+    --card-dark-blue: hsl(216, 50%, 16%);
+    --line-dark-blue: hsl(215, 32%, 27%); 
+
+
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--main-dark-blue);
+    color:white;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.c-card {
+    background-color: var(--card-dark-blue);
+    width: 290px;
+    height: 75vh;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -15px 0px 5px 5px rgba(0, 0, 0, 0.15), 15px 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 25px 5px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 40px;
+    
+}
+
+#card-image {
+    background-image: url(./images/image-equilibrium.jpg);
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+}
+
+#card-image:hover{
+    background-size:20%;
+    background-image: url(./images/icon-view.svg);
+    background-color: var(--cyan);
+    opacity: 0.8;    
+    cursor:pointer;
+    
+    
+    
+}
+.c-card__texts {
+
+    border-bottom: 1px solid var(--line-dark-blue);
+    margin-bottom: 10px;
+    padding: 10px 0;
+    
+}
+
+
+
+h1 {
+    font-weight: var(--semibold);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h1:hover {
+    color:var(--cyan);
+    cursor: pointer;
+}
+
+p {
+    font-size: 16px;
+    font-weight: var(--light);
+    color: var(--soft-blue);
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+span {
+    font-size: 15px;
+    color:var(--soft-blue);
+    font-weight: var(--light);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:var(--cyan)
+}
+.c-card__icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.c-card__icons__item {
+    display: flex;
+}
+
+#icon-ethereum {
+    width: 11px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+
+
+#icon-clock {
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+}
+
+
+
+.c-card__avatar {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+}
+
+#icon-avatar {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 12px;
+    
+}
+
+
+.highlight-span{
+    color:var(--cyan);
+    font-weight: var(--regular);
+}
+
+.attribution {
+     font-size: 11px;    
+     justify-self: flex-end;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
