@@ -7,7 +7,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
   - [Built with](#built-with)
   
 
@@ -23,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot.jpg)
+![screenshot](./images/screenshot.png)
 
 
 
